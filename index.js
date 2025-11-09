@@ -213,11 +213,11 @@ app.delete("/books/:bookId", async (req, res) => {
 });
 
 // Server Start
-// const PORT = 3000;
-// app.listen(PORT, () => {
-//   console.log(` Server running on port ${PORT}`);
-// });
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(` Server running on port ${PORT}`);
+});
 
 // Vercel requirement
 
-module.exports = (req, res) => app(req, res);
+// module.exports = (req, res) => app(req, res);
